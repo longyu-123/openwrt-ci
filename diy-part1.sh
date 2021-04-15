@@ -15,3 +15,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+# Clash
+mkdir -p package/apps
+git clone --depth=1 https://github.com/frainzy1477/luci-app-clash.git package/apps/luci-app-clash
